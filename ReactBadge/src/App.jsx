@@ -1,29 +1,14 @@
 import './App.css'
-import { useState } from 'react'
+import Props from './Badge/Props'
+
 
 function App() {
-  
-const [counter,setCounter] = useState(10)
-
-const addValue =()=>{
-  if(counter<15){
- setCounter(counter+1)
-  }
-}
-const decreaseValue=() =>{
-  if(counter>0){
-  setCounter(counter -1)
-  }
-  
-}
-  return (
-    <>
-    <h1>Welcome</h1>
-    <h2>Counter Value {counter}</h2>
-    <button onClick={addValue}>Add Value</button>
-    <button onClick={decreaseValue}>Delete Value</button>
-    </>
-  )
+ return(
+  <div>
+    <Props name={"fiyaz"} age={25} isWorking ={true} />
+    <Props name={"shammas"} age={24} isWorking = {true}/>
+  </div>
+ )
    
   
 }

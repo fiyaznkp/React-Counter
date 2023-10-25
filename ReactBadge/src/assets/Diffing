@@ -1,0 +1,7 @@
+//Diffing in React
+
+//diffing is used to compare the new virtual dom with previous one.
+//it identifies the difference between the two . it is also known as reconciliation.
+
+
+ 
